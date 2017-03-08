@@ -1,0 +1,55 @@
+    
+      <div class="col-xs-12 col-sm-4  col-xs-offset-0 col-sm-offset-4 ">
+
+    			<div class="account-container">
+				
+				<div class="content clearfix">
+					
+					<form action="<?php echo BASE_URL?>login" method="post">
+					<input type="hidden" value="1" name="enviar" />
+						<h1>Control de Acceso</h1>		
+						
+						<div class="login-fields">
+							
+							<p>Por favor ingrese sus datos.</p>
+							
+							<div class="field">
+								<label for="username">Usuario</label>
+								<input type="text"name="usuario" value="<?php if(isset($this->datos)) echo $this->datos['usuario']; ?>" class="form-control login username-field" placeholder="Usuario" />
+							</div> <!-- /field -->
+							
+							<div class="field">
+								<label for="password">Clave:</label>
+								<input type="password" name="pass" class="form-control login password-field"  placeholder="Clave" required/>
+							</div> <!-- /password -->
+							
+						</div> <!-- /login-fields -->
+						
+						<div class="login-actions">
+							
+							<span class="login-checkbox">
+								<input id="Field" name="Field" type="checkbox" class="field login-checkbox" value="First Choice" tabindex="4" />
+								<label class="choice" for="Field">Keep me signed in</label>
+							</span>
+												
+							<button class="button btn btn-success btn-large" type="submit">Acceder</button>
+							
+						</div> <!-- .actions -->
+						
+						
+						
+					</form>
+					
+				</div> <!-- /content -->
+				
+			</div> <!-- /account-container -->
+
+
+
+			<div class="login-extra">
+				<a href="#">Reset Password</a>
+			</div> <!-- /login-extra -->
+
+
+      </div>
+       
